@@ -119,10 +119,10 @@
 				span{transition: .5s all;}
 				&.-active{
 					position: relative;
-					color: $site-color03;
+					color: $site-color02;
 					font-weight: bold;
 					pointer-events: none;
-					span{color: $site-color03;}
+					span{color: $site-color02;}
 					filter: drop-shadow(1px 1px 0px hsla(0, 0%, 0%, 0.322));
 					pointer-events: none;
 					&::after{

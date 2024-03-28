@@ -3783,14 +3783,14 @@ button.swiper-pagination-bullet {
 }
 .c-hnav__content li a.-active, .c-hnav__content li label.-active {
   position: relative;
-  color: #f2d341;
+  color: #cc5080;
   font-weight: bold;
   pointer-events: none;
   filter: drop-shadow(1px 1px 0px hsla(0, 0%, 0%, 0.322));
   pointer-events: none;
 }
 .c-hnav__content li a.-active span, .c-hnav__content li label.-active span {
-  color: #f2d341;
+  color: #cc5080;
 }
 .c-hnav__content li a.-active::after, .c-hnav__content li label.-active::after {
   content: "";
