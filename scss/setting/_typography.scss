@@ -20,17 +20,17 @@
     // src: url("../fonts/gothic/ZenKakuGothicNew-Regular.ttf") format("truetype");
     src: url("../fonts/gothic/FOT-RodinNTLGPro-M.otf")       format("opentype");
 }
-// @font-face {// デザインフォント(WEBでは使用できない)
-//     font-family: "d-font01";
-//     src: url("../fonts/design/DS-ayumin.ttf")                format("truetype");
-// }
+@font-face {// デザインフォント(WEBでは使用できない)
+    font-family: "d-font01";
+    src: url("../fonts/design/DS-ayumin.ttf")                format("truetype");
+}
 
 $f-mincho:    mincho-font01; // 明朝体01
 $f-gothic:    gothic-font01; // ゴシック体01
 $f-e01:       e-font01;      // 英文フォント01
 $f-e02:       e-font02;      // 英文フォント02
 $f-e03:       e-font03;      // 英文フォント03
-// $f-d01:       d-font01;      // デザインフォント01
+$f-d01:       d-font01;      // デザインフォント01
 
 
 // font-weight
@@ -99,6 +99,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-f-En01{font-family: e-font01;}         // BebasNeue
     &.-f-En02{font-family: e-font02;}         // impact
     &.-f-En03{font-family: e-font03;}         // garamond
+    &.-f-d01 {font-family: d-font01;}         // デザインフォント
 
     // 色
     &.-white{color: $main-color--w !important;}
@@ -162,6 +163,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             font-size: 2.1rem;
             @include min(768){font-size: clamp(1.8rem, 3vw, 3rem);}
             &.-s16{@include max(768){font-size: 1.6rem;}}
+            &.-s18{@include max(768){font-size: 1.8rem;}}
         }
         &.s-3L{
             font-size: 2.8rem;

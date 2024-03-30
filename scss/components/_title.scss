@@ -5,26 +5,39 @@
     &::before{
         content: "";
         position: absolute;
-        bottom: -45%;
+        bottom: -70%;
         left: 50%;
         transform: translateX(-50%);
         width: auto;
-        font-size: 12px;
-    }
-    &::after{
-        content: "";
-        display: block;
-        position: relative;
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 1100px;
-        height: 1px;
-        background: $site-color04;
-        @include min(768){
-            bottom: -30px;
+        font-size: 10px;
+        @include min(768) {
+            bottom: -45%;
+            font-size: 12px;
         }
+    }
+
+    // コンテンツタイトル > ボーダーライン
+    &.-b-btm{
+        &::after{// 基本設定
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -29px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1100px;
+            height: 1px;
+            background: $main-color--b;
+            @include min(768){
+                bottom: -30px;
+            }
+        }
+        // 色指定
+        &.-c01{&::after{background: $site-color01 !important;}}
+        &.-c02{&::after{background: $site-color02 !important;}}
+        &.-c03{&::after{background: $site-color03 !important;}}
+        &.-c04{&::after{background: $site-color04 !important;}}
     }
 
 
@@ -58,7 +71,13 @@
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}// 施工例
     &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}               // オーナー
 
+    // サンプル
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
+
+    // ママズハッピー関係
+    &.-dream{&::before{content: "DREAMS COME TRUE"; white-space: nowrap;}}            // 叶う
+    &.-benri{&::before{content: "CONVENIENT and COMFORTABLE"; white-space: nowrap;}}  // 便利
+
 }
 
 // コンテンツ_メインタイトル
