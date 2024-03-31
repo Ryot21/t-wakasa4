@@ -68,126 +68,163 @@
 	}
 	&.-f-slider{// スライダー
 		position: relative;
+		overflow: hidden;
 		.c-contentsBox{
 			position: absolute;
-			// ファーストビュー×スライダー関係
-			&.-f-title{
-				top: 27%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: 80%;
-				filter: drop-shadow(.5px .5px 0px #ffffff6c);
-				@include min(768){// tb
-					top: 50%;
-					left: 80%;
-					width: 33%;
-				}
-				@include min(1400){
-					top: 50%;
-					left: 70%;
-					width: 30%;
-				}
-			}
-			&.-f-des{
-				bottom: 1px;
-				left: 90%;
-				transform: translateX(-50%);
-				white-space: nowrap;
-				// width: auto;
-				@include min(768){
-					left: 60%;
-					transform: scale(.8);
-				}
-				&.-w{
-					@include min(768){
-						left: 53%;
+			// ファーストビュー関係
+			&.-f{
+				&_title01{// タイトル
+					top: 64%;
+					left: 10%;
+					width: 60%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+					@include min(768){// tb
+						top: 11%;
+						left: 13%;
+						width: 23%;
 					}
 					@include min(1400){
-						left: 72%;
+						top: 15%;
+						left: 21%;
+						width: 20%;
 					}
 				}
-			}
-			&.-f-bird{
-				&_01{// 青
-					top: 20%;
-					left: 15%;
-					width: 5%;
-					@include min(768){// tb
-						top: 10%;
-						left: 2%;
-						width: 4%;
+				&_logo01{// ロゴ
+					@include max(768){
+						top: 4%;
+						left: 33.5%;
+						width: 40%;
+						filter: drop-shadow(.5px .5px 0px #ffffff6c);
 					}
-					@include min(1400){// pc
-						top: 10%;
-						left: 15%;
-						width: 3%;
+					@include min(768){
+						display: none;
+					}
+					// top: 27%;
+					// left: 50%;
+					// transform: translate(-50%, -50%);
+					// width: 80%;
+					// filter: drop-shadow(.5px .5px 0px #ffffff6c);
+					// @include min(768){// tb
+					// 	top: 29%;
+					// 	left: 42%;
+					// 	width: 18%;
+					// }
+					// @include min(1400){
+					// 	top: 28%;
+					// 	left: 50%;
+					// 	width: 13%;
+					// }
+				}
+				&_text01{// テキスト
+					top: 80%;
+					left: 10%;
+					width: 80%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+					@include min(768){// tb
+						top: 56%;
+						left: 13%;
+						width: 28%;
+					}
+					@include min(1400){
+						top: 56%;
+						left: 21%;
+						width: 28%;
 					}
 				}
-				&_02{// うすい
-					top: 20%;
-					left: 23%;
-					width: 3%;
+				&_des{
+					bottom: 1px;
+					left: 90%;
+					transform: translateX(-50%);
+					white-space: nowrap;
+					// width: auto;
+					@include min(768){
+						left: 60%;
+						transform: scale(.8);
+					}
+					&.-w{
+						@include min(768){
+							left: 53%;
+						}
+						@include min(1400){
+							left: 72%;
+						}
+					}
+				}
+				&_title02{
 					@include min(768){// tb
-						top: 7%;
+						top: 1%;
 						left: 7%;
-						width: 3%;
+						width: 35%;
 					}
-					@include min(1400){// pc
-						left: 18%;
-						width: 2%;
-					}
-				}
-				&_03{// 黄色
-					top: 35%;
-					left: 77%;
-					width: 5%;
-					@include min(768){// tb
-						top: 23.5%;
-						left: 91%;
-						width: 2%;
-					}
-					@include min(1400){// pc
-						top: 13.5%;
-						left: 78%;
-						width: 1.8%;
+					@include min(1400){
+						top: 2%;
+						left: 8%;
+						width: 35%;
 					}
 				}
-				&_04{// 緑
+				&_logo02{
 					@include min(768){// tb
-						top: 57%;
-						left: 65%;
-						width: 1.5%;
+						top: 0%;
+						left: 4%;
+						width: 2.5%;
 					}
-					@include min(1400){// pc
-						top: 60%;
-						left: 56%;
-						width: 1%;
+					@include min(1400){
+						top: 0%;
+						left: 5%;
+						width: 2.5%;
+					}
+				}
+				&-02_10{
+					@include min(768){// tb
+						top: 2%;
+						left: 46%;
+						width: 6%;
+					}
+					@include min(1400){
+						top: 2%;
+						left: 46%;
+						width: 6%;
+					}
+				}
+				&-02_11{
+					@include min(768){// tb
+						top: 2%;
+						left: 75%;
+						width: 6%;
+					}
+					@include min(1400){
+						top: 2%;
+						left: 75%;
+						width: 6%;
+					}
+				}
+				&_text03{
+					&_01{
+						opacity: .7;
+						@include min(768){
+							top: 3%;
+							left: 45%;
+							width: 48%;
+						}
+					}
+					&_02{
+						@include min(768){
+							top: 10%;
+							left: 41%;
+							width: 45%;
+						}
 					}
 				}
 			}
-			&.-f-border{
-				top: 36%;
-				left: 25%;
-				width: 50%;
-				@include min(768){// tb
-					top: 25%;
-					left: 67%;
-					width: 24%;
-				}
-				@include min(1400){// pc
-					top: 17%;
-					left: 60%;
-					width: 18%;
-				}
-			}
+
 		}
 	}
 	&.-f-view{//ファーストビュー
 		position: relative;
 		.imgBox{
-			@include max(768){
-				opacity: .75;
-			}
+			// @include max(768){
+			// 	opacity: .75;
+			// }
 		}
 		.c-contentsBox{
 			position: absolute;
