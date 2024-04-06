@@ -411,7 +411,7 @@ h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L,
 }
 h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
   font-size: 1rem;
-  color: #dacebc;
+  color: #3b3b3b;
   transform: scale(0.8);
 }
 @media (width >= 768px) {
@@ -2988,7 +2988,7 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   height: 33%;
   width: 1px;
-  background: #3b3b3b;
+  background: #cc5080;
 }
 .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer::after {
   content: "";
@@ -3808,32 +3808,24 @@ button.swiper-pagination-bullet {
   content: "";
   position: absolute;
   top: 50%;
-  left: -19%;
+  left: -13px;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-image: url(../images/logo/page-title-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (width >= 768px) {
-  .c-hnav__content li a.-active::after, .c-hnav__content li label.-active::after {
-    left: -13%;
-    width: 10px;
-    height: 10px;
-  }
-}
 @media (width >= 1200px) {
   .c-hnav__content li a.-active::after, .c-hnav__content li label.-active::after {
-    top: 49%;
-    left: -18%;
-    width: 15px;
-    height: 15px;
+    left: -18px;
+    width: 13px;
+    height: 13px;
   }
 }
 @media (width >= 1400px) {
   .c-hnav__content li a.-active::after, .c-hnav__content li label.-active::after {
-    left: -17%;
+    left: -18px;
     width: 13px;
     height: 13px;
   }
@@ -4271,7 +4263,7 @@ button.swiper-pagination-bullet {
   position: absolute;
 }
 .c-contents.-f-view .c-contentsBox.-f-title {
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
@@ -4290,7 +4282,7 @@ button.swiper-pagination-bullet {
     text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
-    top: 82%;
+    top: 67%;
     left: 83%;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r::after {
@@ -4308,8 +4300,11 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-layout::after {
     content: "レイアウト";
   }
+  .c-contents.-f-view .c-contentsBox.-f-title.-build::after {
+    content: "新築戸建";
+  }
   .c-contents.-f-view .c-contentsBox.-f-title.-plan::after {
-    content: "プラン";
+    content: "自由設計";
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
     content: "設備・仕様";
@@ -4509,6 +4504,11 @@ button.swiper-pagination-bullet {
     font-size: 12px;
   }
 }
+@media (768px >= width) {
+  .c-contents_title.-row02_s::before {
+    bottom: -39%;
+  }
+}
 .c-contents_title.-b-btm::after {
   content: "";
   display: block;
@@ -4626,7 +4626,27 @@ button.swiper-pagination-bullet {
   white-space: nowrap;
 }
 .c-contents_title.-benri::before {
-  content: "CONVENIENT and COMFORTABLE";
+  content: "CONVENIENT AND COMFORTABLE";
+  white-space: nowrap;
+}
+.c-contents_title.-message::before {
+  content: "MESSAGE FROM THE ARCHITECT";
+  white-space: nowrap;
+}
+.c-contents_title.-ideas::before {
+  content: "FLOOR PLAN IDEAS";
+  white-space: nowrap;
+}
+.c-contents_title.-protfolio::before {
+  content: "JYUKYO'S HAPPY HOUSE";
+  white-space: nowrap;
+}
+.c-contents_title.-safe::before {
+  content: "SAFE LOCATION";
+  white-space: nowrap;
+}
+.c-contents_title.-living::before {
+  content: "CONVENIENT LIVING ENVIRONMENT";
   white-space: nowrap;
 }
 
@@ -6465,7 +6485,7 @@ a {
 
 .p-top {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 3s forwards;
 }
 @media (width >= 768px) {
@@ -6481,7 +6501,7 @@ a {
 
 .p-concept {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6497,7 +6517,7 @@ a {
 
 .p-layout {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6513,7 +6533,7 @@ a {
 
 .p-plan {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6529,7 +6549,7 @@ a {
 
 .p-equipment {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6545,7 +6565,7 @@ a {
 
 .p-location {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {

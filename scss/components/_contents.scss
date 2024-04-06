@@ -229,7 +229,7 @@
 		.c-contentsBox{
 			position: absolute;
 			&.-f-title{
-				top: 50%;
+				top: 45%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 60%;
@@ -249,7 +249,8 @@
 					}
 					// タイトル > 右下
 					&.-f-title_r{
-						top: 82%;
+						top:67%;
+						// top: 82%;
     					left: 83%;
 						&::after{
 							position: absolute;
@@ -264,7 +265,8 @@
 					//　タイトル >  コンセプトページ
 					&.-concept{&::after{content: "コンセプト";}}
 					&.-layout{&::after{content: "レイアウト";}}
-					&.-plan{&::after{content: "プラン";}}
+					&.-build{&::after{content: "新築戸建";}}
+					&.-plan{&::after{content: "自由設計";}}
 					&.-equipment{&::after{content: "設備・仕様";}}
 					&.-location{&::after{content: "周辺環境";}}
 

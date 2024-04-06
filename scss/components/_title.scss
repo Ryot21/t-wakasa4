@@ -15,6 +15,13 @@
             font-size: 12px;
         }
     }
+    &.-row02_s{
+        @include max(768){
+            &::before{
+                bottom: -39%;
+            }
+        }
+    }
 
     // コンテンツタイトル > ボーダーライン
     &.-b-btm{
@@ -76,9 +83,14 @@
 
     // ママズハッピー関係
     &.-dream{&::before{content: "DREAMS COME TRUE"; white-space: nowrap;}}            // 叶う
-    &.-benri{&::before{content: "CONVENIENT and COMFORTABLE"; white-space: nowrap;}}  // 便利
-
+    &.-benri{&::before{content: "CONVENIENT AND COMFORTABLE"; white-space: nowrap;}}  // 便利
+    &.-message{&::before{content: "MESSAGE FROM THE ARCHITECT"; white-space: nowrap;}}// メッセージ
+    &.-ideas{&::before{content: "FLOOR PLAN IDEAS"; white-space: nowrap;}}            // 間取りのアイデア
+    &.-protfolio{&::before{content: "JYUKYO'S HAPPY HOUSE"; white-space: nowrap;}}    // 施工例
+    &.-safe{&::before{content: "SAFE LOCATION"; white-space: nowrap;}}                // 送り向かいに安全な場所
+    &.-living{&::before{content: "CONVENIENT LIVING ENVIRONMENT"; white-space: nowrap;}}// 便利な住環境
 }
+
 
 // コンテンツ_メインタイトル
 .c-contents_MainTitle{

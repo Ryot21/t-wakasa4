@@ -129,26 +129,20 @@
 						content: "";
 						position: absolute;
 						top: 50%;
-						left: -19%;
+						left: -13px;
 						transform: translateY(-50%);
-						width: 12px;
-						height: 12px;
+						width: 10px;
+						height: 10px;
 						background-image: url(../images/logo/page-title-icon.png);
 						background-size: contain;
 						background-repeat: no-repeat;
-						@include min(768){
-							left: -13%;
-							width: 10px;
-							height: 10px;
-						}
 						@include min(1200){
-							top: 49%;
-							left: -18%;
-							width: 15px;
-							height: 15px;
+							left: -18px;
+							width: 13px;
+							height: 13px;
 						}
 						@include min(1400){
-							left: -17%;
+							left: -18px;
 							width: 13px;
 							height: 13px;
 						}
